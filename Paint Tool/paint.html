@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painters</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-32x32.png">
+</head>
+<body>
+    <nav>
+        <h1><img src="paint.png" alt="paint image" width="28" height="28">Painters</h1>
+        <ul>
+            <li><h3>Stroke</h3><div class="colorpicker" id="stroke"></div></li>
+            <li><h3>Background</h3><div class="colorpicker" id="background"></div></li>
+            <li><h3>Line End</h3><span>round</span><svg xmlns="http://www.w3.org/2000/svg" id="endDrop" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></li>
+            <li><h3>Width</h3><div class="width"><div id="width"></div></div></li>
+            <li><h3>Shapes</h3><svg xmlns="http://www.w3.org/2000/svg" id="shapeDrop" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></li>
+        </ul>
+    </nav>
+    <div class="canvasContainer">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="strokeColor">
+        <div class="red color" ></div>
+        <div class="yellow color" ></div>
+        <div class="blue color" ></div>
+        <div class="pink color" ></div>
+        <div class="black color" ></div>
+    </div>
+    <div class="bgColor">
+        <div class="red color"></div>
+        <div class="yellow  color"></div>
+        <div class="blue color"></div>
+        <div class="pink color"></div>
+        <div class="white color"></div>
+    </div>
+    <div class="strokeEnd">
+        <ul>
+            <li class="endListItem">round</li>
+            <li class="endListItem">square</li>
+            <li class="endListItem">butt</li>
+        </ul>
+    </div>
+    <div class="strokeWidth">
+        <input type="range" id="widthSelector" min="1" max="25" value="10" data-sizing="px">
+    </div>
+
+    <div class="shapesContainer">
+        <div id="square"></div>
+        <div id="circle"></div>
+    </div>
+    <div class="message">
+        Made By:- <br> Bharat Kumar <br>
+        Imp:- The shapes work is in progress🙂
+    </div>
+
+    <!-- scripts -->
+    <script src="canvas.js"></script>
+    <script src="working.js"></script>
+</body>
+</html>
